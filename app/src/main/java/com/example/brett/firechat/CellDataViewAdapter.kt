@@ -1,10 +1,9 @@
-package com.example.bobbradley.Recycler  // CHANGE TO YOUR PACKAGE NAME
+package com.example.brett.firechat  // CHANGE TO YOUR PACKAGE NAME
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.bobbradley.firechat1.R
 
 /**
  * Created by bobbradley on 2/22/18.
