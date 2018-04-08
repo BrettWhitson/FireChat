@@ -15,7 +15,7 @@ class ChatActivity : AppCompatActivity() {
         setContentView(R.layout.activity_chat)
 
         var ab = getSupportActionBar()
-        ab?.setTitle("FireChat1")
+        ab?.setTitle("FireChat")
         ab?.setSubtitle(("Chat Room"))
 
         // to get the back button in the action bar to shwo and work
@@ -31,7 +31,7 @@ class ChatActivity : AppCompatActivity() {
 
         attachRecyclerView()
 
-        chatService.setupService( recyclerView.context,{message -> addMessageToRecyclerView(message)})
+        chatService.setupService( recyclerViewChat.context,{message -> addMessageToRecyclerView(message)})
 
         buttonSend.setOnClickListener({view -> sendMessage()})
     }
