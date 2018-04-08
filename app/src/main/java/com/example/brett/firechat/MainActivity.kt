@@ -42,6 +42,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             doLogoutStuff()
         }
 
+        buttonFriends.setOnClickListener({view ->
+            val intent = Intent(this, FriendsActivity::class.java)
+            intent.putExtra("userEmail",mUser?.email.toString())
+            intent.putExtra("userImageUrl", mUser?.photoUrl.toString())
+            startActivity(intent)
+        })
+
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
